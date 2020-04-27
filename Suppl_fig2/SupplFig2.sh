@@ -1,5 +1,6 @@
 #! /bin/sh
 
+#############SNV################
 ###1. COMBINE TUMOR AND ORGANOID SAMPLE
 SRC=/hpc/cog_bioinf/cuppen/project_data/Jose_ovarian/heterogeneity/somatic_snv
 GATK=/gnu/store/gixvx35bphaar1mi58p8nky48hz2hvnq-gatk-3.8.1-aa8764d6c/share/java/gatk/GenomeAnalysisTK.jar
@@ -38,3 +39,6 @@ python convert_vcfs_2_tables.py
 ###5. plot
 Rscript plot_shared.R
 
+#############CNV################
+
+#Need access to work computer, to update after COVID19
