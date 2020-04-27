@@ -7,6 +7,6 @@ A GNU packaged version (https://github.com/UMCUGenetics/guix-additions/blob/mast
 ### Samples with no reference
 For organoid samples with no matching reference, additional filter steps for SNVs, config file for FREEC are available in directory samples_no_reference.
 
-### Supplementary figure 2
-In directory Suppl_fig2/ , steps followed to filter and compare somatic SNV from corresponding tumor and organoid
+### Figures and supplementary figures
+Additional code for VCF/CNV file parsing and figure generation is available in each directory. For several, I need to be able to go back to work since code is at my work computer, will update asap. 
 
