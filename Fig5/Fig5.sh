@@ -1,5 +1,6 @@
 #! /bin/sh
 
+####################################SNV#######################################
 
 ###1. MERGE ORG LOCATIONS
 #Example merge command
@@ -39,7 +40,22 @@ python convert_to_table.py
 ###5. PLOT
 for F in *.rescued.table.csv
 do
-        Rscript venn_from_matrix.R $F
+        Rscript venn_from_matrix_SNV.R $F
 done
 
 
+########AMP AND DEL###########
+
+####CSV FILES FROM copyNumber gene cnv files.
+#0 = no cnv
+#1 = deletion
+#2 = amplification
+#Using Priestley et al. criteria
+###One example given
+#I did not do the calculation, can't access it
+
+for F in *.csv
+do
+        Rscript venn_from_matrix_AMP.R $F
+        Rscript venn_from_matrix_DEL.R $F
+done
